@@ -5,7 +5,6 @@
 /**
  * main - The string Last digit
  * Return: Always 0 (Success)
- * el operador modulo % me trae el último digito por medio del residuo del la divi (numero de base 10)
 */
 int main(void)
 {

@@ -8,9 +8,14 @@ int main(void)
 	int n, lt;
 
 	for (n = '0'; n <= '9'; n++)
+	{
 		putchar(n);
-		for(lt = 97; lt <= 102; lt++)
+	}
+		for (lt = 97; lt <= 102; lt++)
+		{
 			putchar(lt);
-	putchar('\n')	
+		}
+
+	putchar('\n');
 	return (0);
 }

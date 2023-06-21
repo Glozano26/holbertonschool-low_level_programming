@@ -1,19 +1,16 @@
 #include "main.h"
-#include <unistd.h>
+
 /**
- * _putchar - void print_alphabet(void);
- * @c: The character to print
+ * print_alphabet - prints the alphabet, in lowercase, followed by a new line
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: Always 0
  */
-int main(void)
+void print_alphabet(void)
 {
 	int i;
 
-	for (i = 97; i <= 122; i++)
+	for (i = 'a'; i <= 'z'; i++)
 		_putchar(i);
 	_putchar('\n');
 
-	return (0);
 }

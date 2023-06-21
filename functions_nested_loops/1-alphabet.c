@@ -1,9 +1,11 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * main - check the code
+ * _putchar - void print_alphabet(void);
+ * @c: The character to print
  *
- * Return: Always 0.
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
 int main(void)
 {

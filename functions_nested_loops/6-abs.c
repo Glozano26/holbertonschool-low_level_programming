@@ -3,7 +3,7 @@
  * _abs -  computes the absolute value of an integer.
  * @int: prueba
  * @r: parameter
- * Return: Always 0.
+ * Return: integer
  */
 int _abs(int r)
 {

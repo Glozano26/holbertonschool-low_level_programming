@@ -7,10 +7,12 @@
  */
 int _abs(int r)
 {
-	int r;
-
-	r = _abs(r);
-	_putchar(r);
-
-	return (0);
+	if (r < 0)
+	{
+		return (-r);
+	}
+	else
+	{
+		return (r);
+	}
 }

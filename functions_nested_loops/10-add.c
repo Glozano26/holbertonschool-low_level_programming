@@ -7,11 +7,14 @@
  */
 int add(int a, int b)
 {
-	int sum;
+	int sum = a + b;
 
-	sum = a + b;
-	_putchar(sum / 10 + '0');
-	_putchar(sum % 10 + '0');
+	int tens = sum / 10;
+
+	int ones = sum % 10;
+
+	_putchar(tens + '0');
+	_putchar(ones + '0');
 
 	return (sum);
 }

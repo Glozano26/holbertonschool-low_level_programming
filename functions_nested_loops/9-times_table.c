@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *  main - Learn your times table -prints the 9 times table
+ *  times_table - Learn your times table -prints the 9 times table
  *  Descripcion: times table
  *  Return: Always 0
  */

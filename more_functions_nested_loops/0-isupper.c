@@ -6,9 +6,9 @@
  */
 int _isupper(int c)
 {
-	int c;
+	int alp;
 
-	if (c >= 'A' && c <= 'Z')
+	if (alp >= 'A' && alp <= 'Z')
 	{
 		return (1);
 	}

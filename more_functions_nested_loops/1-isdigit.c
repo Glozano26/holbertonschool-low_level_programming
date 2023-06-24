@@ -5,7 +5,7 @@
  * Return: 1 if c is lowercase, 0 if otherwise
  * @c: single letter input
  */
-int _isdigit(int c);
+int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 	{

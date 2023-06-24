@@ -15,9 +15,6 @@ void more_numbers(void)
 			if (c > 9)
 			{
 				putchar((c / 10) + '0');
-			}
-			else
-			{
 				putchar((c % 10) + '0');
 			}
 		}

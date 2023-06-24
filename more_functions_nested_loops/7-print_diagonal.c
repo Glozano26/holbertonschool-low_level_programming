@@ -12,7 +12,7 @@ void print_diagonal(int n)
 	while (i < n)
 	{
 		putchar('\\');
-		putchar('\n);
+		putchar('\n');
 	}
 	putchar('\n');
 }

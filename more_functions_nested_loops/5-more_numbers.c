@@ -17,6 +17,10 @@ void more_numbers(void)
 				putchar((c / 10) + '0');
 				putchar((c % 10) + '0');
 			}
+			else
+			{
+				putchar((c / 10) + '0');
+			}
 		}
 		putchar('\n');
 	}

@@ -14,11 +14,10 @@ void more_numbers(void)
 		{
 			if (c < 10)
 			{
-				
+				putchar((c / 10) + '0');
 			}
 			else
 			{
-				putchar((c / 10) + '0');
 				putchar((c % 10) + '0');
 			}
 		}

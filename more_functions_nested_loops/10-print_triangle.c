@@ -11,7 +11,7 @@ void print_square(int size)
 
 	if (size <= 0)
 	{
-		putchar('\n')
+		putchar('\n');
 	}
 	for (esp = 1; esp <= size; esp++)
 	{

@@ -13,16 +13,20 @@ void print_square(int size)
 	{
 		putchar('\n');
 	}
-	for (esp = 0; esp <= (size - 1); esp++)
+	else
 	{
-		for (q = 0; q < (size - 1) - esp; q++)
+	
+		for (esp = 0; esp <= (size - 1); esp++)
 		{
+			for (q = 0; q < (size - 1) - esp; q++)
+			{
 			putchar(' ');
-		}
-		for (numeral = 0; numeral <= esp; numeral++)
-		{
+			}
+			for (numeral = 0; numeral <= esp; numeral++)
+			{
 			putchar('#');
-		}
-		putchar('\n');
+			}
+			putchar('\n');
+		}	
 	}
 }

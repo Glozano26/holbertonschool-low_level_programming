@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_triangle -  prints a triangle, followed by a new line
- * @size - input print '#'
- * Return: Always 0.
+ * print_triangle - a function that prints a triangle
+ * @size: size of the triangle
+ * Return: triangle of '#'s
  */
 void print_square(int size)
 {
@@ -13,13 +13,13 @@ void print_square(int size)
 	{
 		putchar('\n');
 	}
-	for (esp = 1; esp <= size; esp++)
+	for (esp = 0; esp <= (size - 1); esp++)
 	{
-		for (q = 1; q <= size - esp; q++)
+		for (q = 0; q < (size - 1) - esp; q++)
 		{
 			putchar(' ');
 		}
-		for (numeral = 1; numeral <= esp; numeral++)
+		for (numeral = 0; numeral <= esp; numeral++)
 		{
 			putchar('#');
 		}

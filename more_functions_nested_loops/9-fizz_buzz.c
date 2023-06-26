@@ -30,7 +30,9 @@ int main(void)
 		{
 			printf("%d", n);
 		}
-		printf("\n");
 
-	}	return (0);
+		
+	}
+	printf("\n");	
+	return (0);
 }

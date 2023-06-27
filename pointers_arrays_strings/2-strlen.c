@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _strlen - returns the length of a string
- * @s - pointer char
+ * @*s - pointer char
  * Return: Always 0.
  */
 int _strlen(char *s)
@@ -13,6 +13,5 @@ int _strlen(char *s)
 		len++;
 		s++;
 	}
-	return len;
-
+	return (len);
 }

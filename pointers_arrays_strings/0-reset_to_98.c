@@ -7,13 +7,13 @@
  */
 void reset_to_98(int *n)
 {
-	int m;
+	int n;
 	int *n;
 
-	m = 402;
-	n = &m;
-	printf("n=%d\n", m);
+	n = 402;
+	n = &n;
+	printf("n=%d\n", n);
 	*n = 98;
-	printf("n=%d\n", m);
+	printf("n=%d\n", n);
 
 }

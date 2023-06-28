@@ -30,5 +30,5 @@ void rev_string(char *s)
 	while (*ptr != '\0')
 	{
 		ptr++;
-	putchar('\n');
+	}
 }

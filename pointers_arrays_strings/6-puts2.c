@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * puts2 - prints every other character of a string
- * @str - input char
- * Return: Always 0.
+ * @str: string
+ * Return: void
  */
 void puts2(char *str)
 {

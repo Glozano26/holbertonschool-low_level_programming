@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _atoi - convert a string to an integer.
  * @s: the value to intenger
@@ -8,7 +8,7 @@
 int _atoi(char *s)
 {
 	int signo = 1;
-	unsigned int num = 0, num2;
+	unsigned int num = 0;
 	int digito = 0;
 
 	while (*s)

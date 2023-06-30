@@ -19,7 +19,7 @@ int _atoi(char *s)
 		}
 		else if (*s >= '0' && *s <= '9')
 		{
-			num = (num * 10) + (*s <= '9')
+			num = (num * 10) + (*s - '0');
 			digito = 1;
 		}
 		else if (digito)

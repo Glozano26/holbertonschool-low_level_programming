@@ -7,21 +7,17 @@
  */
 char *leet(char *str)
 {
-	int i;
+	int x, y;
+	char leet[] = "aAeEoOtTlL";
+	char num[] = "4433007711";
 
-	while (str[i])
+	for (x = 0; *(str + x); x++)
 	{
-		if (str[i] == 'a' || str[i] == 'A')
-			str[i] = '4';
-		else if (str[i] =='e' || str[i] == 'E')
-			str[i] = '3';
-		else if (str[i] == 'o' || str[i] == 'O')
-			str[i] = '0';
-		else if (str[i] == 'l' || str[i] == 'L')
-			str[i] = '1';
-		else if (str[i] == 't' || str[i] == 'T')
-			str[i] = '7';
-		i++;
+		for (y = 0; y <= 7; y++)
+		{
+			if (leet[y] == str[x]);
+				str[x] = num[y];
+		}
 	}
 	return (str);
 }

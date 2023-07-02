@@ -13,7 +13,7 @@ char *leet(char *str)
 
 	for (x = 0; *(str + x); x++)
 	{
-		for (y = 0; y <= 7; y++)
+		for (y = 0; y <= 9; y++)
 		{
 			if (leet[y] == str[x])
 				str[x] = num[y];

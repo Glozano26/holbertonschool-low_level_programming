@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * string_toupper - changes all lowercase of string to uppercase
- * @s: string array
- *  Return: the result
+ * @str: string array
+ * Return: the result
  */
 char *string_toupper(char *str)
 {

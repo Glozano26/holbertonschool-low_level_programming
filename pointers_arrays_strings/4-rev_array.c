@@ -7,7 +7,7 @@
  * @n: the number of elements to swap
  * Return: nothing.
  */
-void print_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int l, r, i;
 	int middle = n / 2;

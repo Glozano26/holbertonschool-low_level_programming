@@ -11,6 +11,7 @@ void print_array(int *a, int n)
 {
 	int l, r, i;
 	int middle = n / 2;
+
 	n -= 1;
 
 	for (i = 0; i < middle; i++)

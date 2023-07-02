@@ -17,7 +17,7 @@ void print_array(int *a, int n)
 	{
 		l = a[n - i];
 		r = a[i];
-		a[i] = left;
+		a[i] = l;
 		a[n - i] = r;
 	}
 }

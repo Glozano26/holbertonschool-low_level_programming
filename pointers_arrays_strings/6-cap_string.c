@@ -16,7 +16,10 @@ char *cap_string(char *s)
 
 			*ptr = *ptr - 32;
 
-		(len = (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' || *ptr == ',' || *ptr == '.' || *ptr == '!' || *ptr == '?' || *ptr == '"' || *ptr == '(' || *ptr == ')' || *ptr == '{' || *ptr == '}'));
+		(len = (*ptr == ' ' || *ptr == '\t' || *ptr == '\n' ||
+		       	*ptr == ',' || *ptr == '.' || *ptr == '!' ||
+		       	*ptr == '?' || *ptr == '"' || *ptr == '(' ||
+		       	*ptr == ')' || *ptr == '{' || *ptr == '}'));
 
 		ptr++;
 	}

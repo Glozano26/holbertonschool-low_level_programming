@@ -13,7 +13,9 @@ char *cap_string(char *s)
 	while (*ptr != '\0')
 	{
 		if (len && *ptr >= 'a' && *ptr <= 'z')
+		{
 			*ptr = *ptr - 32;
+		}
 		len = (*ptr == ' ' || *ptr == || '\t' || *ptr == '\n' || *ptr == ',' || *ptr == '.' || *ptr == '!' || *ptr == '?' || *ptr == '"' || *ptr == '(' || *ptr == ')' || *ptr == '{' || *ptr == '}');
 
 		ptr++;

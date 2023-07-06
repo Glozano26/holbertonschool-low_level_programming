@@ -1,11 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _sqrt_recursion - returns the natural square root of a number
- * @n: number
+ * _pow_recursion - function that returns the value
+ * @x: base
+ * @y: exponent
  * Return: Always 0.
  */
-int _pow_recursion(int n)
+int _pow_recursion(int n, int y)
 {
 	if (y < 0)
 	{

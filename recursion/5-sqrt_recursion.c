@@ -8,10 +8,6 @@
  * @y: input
  * Return: Always 0.
  */
-int _sqrt_recursion(int n)
-{
-	return (_sqrt_recursion_aux(n, 1));
-}
 int _sqrt_recursion_aux(int n, int y)
 {
 	if (n > (y * y))
@@ -27,4 +23,8 @@ int _sqrt_recursion_aux(int n, int y)
 		return (y);
 	}
 	return (_sqrt_recursion_aux((n), y++));
+}
+int _sqrt_recursion(int n)
+{
+	        return (_sqrt_recursion_aux(n, 1));
 }

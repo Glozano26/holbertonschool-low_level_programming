@@ -24,7 +24,7 @@ int is_prime_number_aux(int n, int div)
 }
 /**
  * is_primer_number - function prints integer
- * @n: input
+ * @n: input parameter
  * Return: Always 0.
  */
 int is_prime_number(int n)

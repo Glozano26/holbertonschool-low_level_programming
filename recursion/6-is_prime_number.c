@@ -23,7 +23,7 @@ int is_prime_number_aux(int n, int div)
 	return (is_prime_number_aux(n, div + 1));
 }
 /**
- * is_primer_number - function prints integer
+ * is_prime_number - function prints integer
  * @n: input parameter
  * Return: Always 0.
  */

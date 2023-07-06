@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * _pow_recursion - function that returns the value
- * @x: base
+ * @n: base
  * @y: exponent
  * Return: Always 0.
  */

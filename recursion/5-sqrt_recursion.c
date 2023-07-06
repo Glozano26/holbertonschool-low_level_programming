@@ -24,7 +24,12 @@ int _sqrt_recursion_aux(int n, int y)
 	}
 	return (_sqrt_recursion_aux((n), y++));
 }
+/**
+ * _sqrt_recursion - returns the natural square
+ * @n: input
+ * Return: Always 0.
+ */
 int _sqrt_recursion(int n)
 {
-	        return (_sqrt_recursion_aux(n, 1));
+	 return (_sqrt_recursion_aux(n, 1));
 }

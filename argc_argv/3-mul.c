@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * main - entry point
@@ -6,15 +7,16 @@
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
-{	
+{
 	int x, y, r;
-	if (argv != 3)
+
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	x = argv(atoi[1]);
-	y = argv(atoi[2]);
+	x = atoi(argv[1]);
+	y = atoi(argv[2]);
 	r = x * y;
 	printf("%d\n", r);
 	return (0);

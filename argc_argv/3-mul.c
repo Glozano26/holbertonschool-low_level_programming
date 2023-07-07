@@ -6,12 +6,16 @@
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
-{
-	int i;
-
-	for (i = 0; i < argc; i++)
+{	
+	int x, y, r;
+	if (argv != 3)
 	{
-		printf("%s\n", argv[i];
+		printf("Error\n");
+		return (1);
 	}
+	x = argv(atoi[1]);
+	y = argv(atoi[2]);
+	r = x * y;
+	printf("%d\n", r);
 	return (0);
 }

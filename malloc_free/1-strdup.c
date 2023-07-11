@@ -11,7 +11,7 @@ char *_strdup(char *str)
 	char *copy_string;
 
 	if (str == NULL)
-	{	
+	{
 		return (NULL);
 	}
 	else

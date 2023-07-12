@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 /**
  * str_concat - concatenates two strings
  * @s1: input char
@@ -68,4 +69,5 @@ char *str_concat(char *s1, char *s2)
 			x++;
 		}
 		return (conca);
+	}	
 }

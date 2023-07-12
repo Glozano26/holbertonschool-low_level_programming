@@ -11,7 +11,8 @@ char *str_concat(char *s1, char *s2)
 	int t, x, i = 0, c = 0;
 	char *conca = NULL;
 
-
+	if (s1 == NULL && s2 == NULL)
+		return (NULL);
 	while (s1[i] != '\0')
 	{
 		i++;
@@ -30,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 		conca[t] = s1[t];
 	}
 	x = 0;
-	while (t <= (i + c))
+	while (t < (i + c))
 	{
 		conca[t] = s2[x];
 		t++;

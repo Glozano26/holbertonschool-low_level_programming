@@ -3,6 +3,8 @@
 #include "main.h"
 /**
  * malloc_checked - function that allocates memory
+ * @s1: pointer
+ * @s2: pointer
  * @n: integer
  * Return: Always 0.
  */

@@ -3,7 +3,7 @@
 #include "main.h"
 /**
  * malloc_checked - function that allocates memory
- * @b: integer
+ * @n: integer
  * Return: Always 0.
  */
 

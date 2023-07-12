@@ -22,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 		while (s2[c] != '\0')
 		{
 			c++;
-		{
+
 			conca = malloc(sizeof(char) * (c + 1));
 			x = 0;
 			while (x <= c)
@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 			}
 			return (conca);
 		}
-		else if (s2 == NULL)
+		if else (s2 == NULL)
 		{
 			while (s1[i] != '\0')
 			{

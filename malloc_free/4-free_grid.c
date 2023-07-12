@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  * free_grid - función que libere una cuadrícula bidimensional
+ * @grid: puntero
  * @height: rows
  * Return: pointer
  */

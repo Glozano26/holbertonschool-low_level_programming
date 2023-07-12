@@ -29,9 +29,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		conca[t] = s1[t];
 	}
-	while (t < c)
+	x = 0;
+	while (t <= (i + c))
 	{
-		conca[t + i] = s2[t];
+		conca[t] = s2[x];
 		t++;
 		x++;
 	}

@@ -11,7 +11,7 @@ char *str_concat(char *s1, char *s2)
 	int t, x, i = 0, c = 0;
 	char *conca = NULL;
 
-	if (!*s1 && !*s2)
+	if (!*s1 || !*s2)
 		return (conca);
 	while (s1[i] != '\0')
 	{

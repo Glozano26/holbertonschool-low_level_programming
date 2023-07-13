@@ -29,12 +29,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			return (NULL);
 		for (t = 0; t < i; t++)
 			conca[t] = s1[t];
-		x = 0;
-		while (t < (i + c))
+		for (x = 0; t < (i + n); x++)
 		{
 			conca[t] = s2[x];
 			t++;
-			x++;
 		}
 		conca[t] = '\0';
 	}
@@ -45,12 +43,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			return (NULL);
 		for (t = 0; t < i; t++)
 			conca[t] = s1[t];
-		x = 0;
-		while (t < (i + n))
+		for (x = 0; t < (i + n); x++)
 		{
 			conca[t] = s2[x];
 			t++;
-			x++;
 		}
 		conca[t] = '\0';
 	}

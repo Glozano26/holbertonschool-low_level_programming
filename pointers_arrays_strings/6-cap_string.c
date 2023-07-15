@@ -17,7 +17,7 @@ char *cap_string(char *s)
 				
 			*ptr = *ptr - 32;
 
-			if (len && *ptr >= 32 && len && *ptr <= 47)
+			if (len && *ptr >= 32 && *ptr <= 47)
 			{
 				(len = (*ptr == '\t' || *ptr == '\n' ||	*ptr == '?' ||	*ptr == '{' || *ptr == '}'));
 			}

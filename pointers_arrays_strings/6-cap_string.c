@@ -13,14 +13,17 @@ char *cap_string(char *s)
 	while (*ptr != '\0')
 	{
 		if (len && *ptr >= 'a' && *ptr <= 'z')
-
+		{
+				
 			*ptr = *ptr - 32;
-		if (len && *ptr >= 32 && len && *ptr <= 47)
-			;
 
-		(len = (*ptr == '\t' || *ptr == '\n' ||	*ptr == '?' ||	*ptr == '{' || *ptr == '}'));
+			if (len && *ptr >= 32 && len && *ptr <= 47)
+			{
+				(len = (*ptr == '\t' || *ptr == '\n' ||	*ptr == '?' ||	*ptr == '{' || *ptr == '}'));
+			}
+		}
 
-		ptr++;
+	ptr++;
 	}
 	return (s);
 }

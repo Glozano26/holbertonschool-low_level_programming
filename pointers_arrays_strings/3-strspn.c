@@ -16,10 +16,10 @@ unsigned int _strspn(char *s, char *accept)
 
 		for (i = 0; accept[i] != '\0'; i++)
 		{
-			if (*s == accept[i])/*si hay coincidencia True*/
+			if (*s == accept[i])
 			{
-				count = 1;/*cuando no se encuentra el caracter en accept para detener el for*/
-				break;
+				count = 1; /*si hay coincidencia True*/
+				break; /*cuando no se encuentra el caracter en accept*/
 			}
 		}
 		if (count == 0) /*si no hubo coincidencia (false 0)*/

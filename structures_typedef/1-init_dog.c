@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include"dog.h"
-
 /**
  * init_dog - prototype
  *@d: pointer
@@ -10,7 +9,6 @@
  *@owner: dog owner.
  *Return: if its ok return d, else NULL
  */
-
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
         if (d != NULL)

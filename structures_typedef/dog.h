@@ -1,10 +1,10 @@
 #ifndef DOG_H
 #define DOG_H
 /**
-* struct_dog - new type
-* @name: first member
-* @age: second member
-* @owner: third member
+* struct_dog - new type de variables
+* @name: name dog
+* @age: age dog
+* @owner: owner dog
 */
 
 typedef struct dog

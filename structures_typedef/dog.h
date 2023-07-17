@@ -1,7 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 /**
-* struct_dog - new type de variables
+* struct dog - new type de variables
 * @name: name dog
 * @age: age dog
 * @owner: owner dog

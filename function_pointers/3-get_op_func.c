@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include"3-calc.h"
 
 /**
@@ -22,11 +23,11 @@ int (*get_op_func(char *s))(int, int)
 	/* f hace referencia a los nombres de las funciones*/
 	while (ops[i].op != NULL)
 	{
-		if (strcmp(ops[i].op, s) == 0)
+		if (*(ops[i].op) == *s)
 		{
 			return (ops[i].f);
-		i++;
 		}
+		i++;
 	}
 	return (NULL);
 }

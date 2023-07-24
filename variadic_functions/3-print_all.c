@@ -48,7 +48,7 @@ void p_str(va_list argts)
 	printf("%s", str);
 }
 /**
- * print_all - prints
+ * print_all - prints anything
  * @format: list of types of arguments
  * @argts: arguments array
  */
@@ -85,4 +85,4 @@ void print_all(const char * const format, ...)
 	}
 	printf("\n");
 	va_end(argts);
-
+}

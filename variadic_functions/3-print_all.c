@@ -5,7 +5,8 @@
 /**
   * variables - struct parameters
   */
-typedef struct variables{
+typedef struct variables
+	{
 	char *ptr;
 	void (*function)(va_list argts);
 	} type_var;
@@ -65,7 +66,6 @@ void print_all(const char * const format, ...)
 		{"i", p_int},
 		{"f", p_float},
 		{"s", p_str},
-		{NULL, NULL}
 	};
 
 	va_start(argts, format);

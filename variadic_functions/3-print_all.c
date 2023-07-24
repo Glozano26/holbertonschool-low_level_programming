@@ -2,7 +2,9 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-
+/**
+  * variables - struct parameters
+  */
 typedef struct variables{
 	char *ptr;
 	void (*function)(va_list argts);

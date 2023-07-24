@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-  * @variables: struct parameters
+  * variables - struct parameters
   */
 typedef struct variables{
 	char *ptr;
@@ -59,8 +59,8 @@ void print_all(const char * const format, ...)
 	char *esp = "", *coma = ", ";
 	va_list argts;
 
-	type_var variables[] = {
-
+	type_var variables[] = 
+	{
 		{"c", p_char},
 		{"i", p_int},
 		{"f", p_float},

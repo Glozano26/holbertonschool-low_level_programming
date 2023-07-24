@@ -68,20 +68,18 @@ void print_all(const char * const format, ...)
 
 	va_start(argts, format);
 
-	while (format != NULL && format[i] != '\0')
+	while (format[i])
 	{
 	x = 0;
-		while (*(variables[x].ptr) != '\0')
-		{
-			if (*(variables[x].ptr) == format[i])
+		while (x < 4 && format[i] != *(variables[x].ptr))
+		x++;
+			if (x < 4)
 			{
 				printf("%s", esp);
 				variables[x].function(argts);
 				esp = coma;
 			}
-			x++;
-		}
-		i++;
+			i++;
 	}
 	printf("\n");
 	va_end(argts);

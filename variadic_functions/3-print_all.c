@@ -50,7 +50,6 @@ void p_str(va_list argts)
 /**
  * print_all - prints anything
  * @format: list of types of arguments
- * @variables: struct function
  */
 void print_all(const char * const format, ...)
 {

@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-  * variables - struct parameters
+  * @variables: struct parameters
   */
 typedef struct variables{
 	char *ptr;

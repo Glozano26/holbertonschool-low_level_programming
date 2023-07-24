@@ -50,7 +50,7 @@ void p_str(va_list argts)
 /**
  * print_all - prints anything
  * @format: list of types of arguments
- * @variables: struct function 
+ * @variables: struct function
  */
 void print_all(const char * const format, ...)
 {
@@ -59,6 +59,7 @@ void print_all(const char * const format, ...)
 	va_list argts;
 
 	type_var variables[] = {
+
 		{"c", p_char},
 		{"i", p_int},
 		{"f", p_float},

@@ -73,7 +73,7 @@ void print_all(const char * const format, ...)
 	x = 0;
 		while (*(variables[x].ptr) != '\0')
 		{
-			if (variables[x].ptr == format[i])
+			if (*(variables[x].ptr) == format[i])
 			{
 				printf("%s", esp);
 				variables[x].function(argts);

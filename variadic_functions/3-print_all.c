@@ -61,19 +61,20 @@ void print_all(const char * const format, ...)
 
 	va_start(argts, format);
 
-	while (format[i])
+	while (format && format[i])
 	{
 	x = 0;
-		while (x < 4 && format[i] != *(variables[x].ptr))
-		x++;
-			if (x < 4)
+		while (x < 4)
+
+			if (format[i] == *(variables[x].ptr))
 			{
 				printf("%s", esp);
 				variables[x].function(argts);
 				esp = coma;
 			}
-			i++;
+			x++;
 	}
+	i++;
 	printf("\n");
 	va_end(argts);
 }

@@ -65,6 +65,7 @@ void print_all(const char * const format, ...)
 	{
 	x = 0;
 		while (x < 4)
+		{
 
 			if (format[i] == *(variables[x].ptr))
 			{
@@ -73,8 +74,9 @@ void print_all(const char * const format, ...)
 				esp = coma;
 			}
 			x++;
+		}
+		i++;
 	}
-	i++;
 	printf("\n");
 	va_end(argts);
 }

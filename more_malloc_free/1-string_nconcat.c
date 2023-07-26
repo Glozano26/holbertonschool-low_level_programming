@@ -1,54 +1,70 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
+
+ */
+
 /**
- * string_nconcat - function that allocates memory
- * @s1: pointer
- * @s2: pointer
+ * _strlen - gets string length
+ * @string: string
+ * Return: length (int)
+ */
+
+int _strlen(char *string)
+{
+	int length;
+
+	length = 0;
+	while (string[length] != '\0')
+	{
+		length++;
+	}
+	return (length);
+}
+
+/**
+ * string_nconcat - concatenates two strings
+ * @s1: string 1
+ * @s2: string 2
  * @n: integer
- * Return: Always 0.
+ * Return: pointer to allocated memory
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int t, x, i = 0, c = 0;
-	char *conca;
+	unsigned int length1, length2, lengthc, i, j;
+	char *str;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	while (s1[i] != '\0')
-		i++;
-	while (s2[c] != '\0')
-		c++;
-	if (c <= n)
-	{
-		conca = malloc(sizeof(char) * (i + c + 1));
-		if (conca == NULL)
-			return (NULL);
-		for (t = 0; t < i; t++)
-			conca[t] = s1[t];
-		for (x = 0; t < (i + n); x++)
-		{
-			conca[t] = s2[x];
-			t++;
-		}
-		conca[t] = '\0';
-	}
+	length1 = _strlen(s1);
+	length2 = _strlen(s2);
+
+	if (n >= length2)
+		lengthc = length1 + length2 + 1;
 	else
 	{
-		conca = malloc(sizeof(char) * (i + n + 1));
-		if (conca == NULL)
-			return (NULL);
-		for (t = 0; t < i; t++)
-			conca[t] = s1[t];
-		for (x = 0; t < (i + n); x++)
-		{
-			conca[t] = s2[x];
-			t++;
-		}
-		conca[t] = '\0';
+		lengthc = length1 + n + 1;
+		length2 = n;
 	}
-	return (conca);
+	str = malloc(lengthc);
+	if (str == NULL)
+		return (NULL);
+
+	i = 0;
+	while (i < length1)
+	{
+		str[i] = s1[i];
+		i++;
+	}
+	j = 0;
+	while (j < length2)
+	{
+		str[i + j] = s2[j];
+		j++;
+	}
+	str[i + j] = '\0';
+	return (str);
 }

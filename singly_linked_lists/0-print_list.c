@@ -2,6 +2,7 @@
 /**
   *print_list - prints all the elements
   *@h: pointer parameter
+  *Return: the number of node
   */
 size_t print_list(const list_t *h)
 {
@@ -13,11 +14,11 @@ size_t print_list(const list_t *h)
 	{
 		if (current->str == NULL)
 		{
-		printf("[0] (nil)\n");
+			printf("[0] (nil)\n");
 		}
 		else
 		{
-		printf("[%u] %s\n", current->len, current->str);
+			printf("[%u] %s\n", current->len, current->str);
 		}
 	current = current->next;
 	i++;

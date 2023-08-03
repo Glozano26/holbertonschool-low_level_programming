@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- *print_dlistint_len - function that prints all the elements
+ *print_dlistint - function that prints all the elements
  *@h: constan pointer
  *Return: i
  */

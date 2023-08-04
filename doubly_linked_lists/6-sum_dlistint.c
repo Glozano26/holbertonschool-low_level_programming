@@ -2,7 +2,7 @@
 
 /**
  *sum_distint - function that returns the sum of all the data
- *dlistint_t - sum linked list
+ *dlistint_t sum linked list
  *@head: pointer node
  *Return: sum all datas
  */

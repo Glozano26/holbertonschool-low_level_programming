@@ -7,7 +7,6 @@
  * @value: is the value associated with the key
  * Return: 1 if it succeeded, 0 otherwise
  */
-
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
@@ -19,12 +18,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node = malloc(sizeof(hash_node_t));
 	if (new_node == NULL)
 		return (0);
-
-	new_node->key = strdup(key);
-	new_node->value = strdup(value);
+	new_node->key = key;
+	new_node->value = value;
 	new_node->next = NULL;
-
-	/*Agrega el nodo a la tabla hash (manejando colisiones si es necesario*/
 	if (ht->array[index] == NULL)
 	{
 		ht->array[index] = new_node;
@@ -39,7 +35,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			if (strcmp(current->key, key) == 0)
 			{
 				free(current->value);
-				current->value = strdup(value);
+				current->value = value;
 				return (1);
 			}
 			current = current->next;
@@ -47,11 +43,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		if (strcmp(current->key, key) == 0)
 		{
 			free(current->value);
-			current->value = strdup(value);
+			current->value = value;
 			return (1);
 		}
-		new_node->next = ht->array[index];
-		ht->array[index] = new_node;
+		new_node->next = current->next;
+		current->next = new_node;
 		return (1);
 	}
 }
